@@ -9,9 +9,33 @@
   --title-text-color: #212121;
 
   /* основной цвет фона */
-  --main-bg-color: #fffff;
+  --main-bg-color: #ffffff;
   /* дополнительный цвет фона */
   --minor-bg-color: #f5f4fa;
   /* цвет фона повышенного внимания */
   --hero-bg-color: #2f303a;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+body a {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--title-text-color);
+
+  font-family: Raleway, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.web {
+  color: var(--accent-text-color);
 }
