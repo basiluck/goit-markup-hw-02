@@ -1,3 +1,4 @@
+/* Палитра цветов */
 :root {
   /* основной цвет текста */
   --main-text-color: #757575;
@@ -16,15 +17,43 @@
   --hero-bg-color: #2f303a;
 }
 
+/* Общие настройки */
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
-
 body a {
   text-decoration: none;
 }
+body li {
+  list-style-type: none;
+}
 
+a {
+  color: inherit;
+}
+
+/* Хедер */
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.header a:hover,
+a:focus {
+  color: var(--accent-text-color);
+}
+
+.nav {
+  color: var(--title-text-color);
+}
+
+/* Логотип */
 .logo {
   color: var(--title-text-color);
 
