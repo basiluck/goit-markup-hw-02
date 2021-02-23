@@ -35,6 +35,14 @@ body li {
 a {
   color: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
 
 /* Хедер */
 .header {
@@ -84,4 +92,55 @@ a:focus {
 .logo:hover,
 .logo:focus {
   color: var(--accent-text-color);
+}
+
+/* Cекция-герой */
+.hero-business {
+  background-color: var(--hero-bg-color);
+  color: var(--minor-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--accent-text-color);
+  color: var(--minor-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.hero-list {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.about-us {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.members {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.members h3 {
+  font-weight: 500;
 }
