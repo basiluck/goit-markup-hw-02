@@ -4,6 +4,8 @@
   --main-text-color: #757575;
   /* дополнительный цвет текста */
   --minor-text-color: #ffffff;
+  /* дополнительный цвет текста с прозрачностью */
+  --alpha-minor-text-color: rgba(255, 255, 255, 0.6);
   /* цвет интерактивных элементов и части логтипа */
   --accent-text-color: #2196f3;
   /* цвет заголовков */
@@ -30,30 +32,42 @@ body a {
 body li {
   list-style-type: none;
 }
-
 a {
   color: inherit;
 }
 
 /* Хедер */
-
 .header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-
 .header a:hover,
 a:focus {
   color: var(--accent-text-color);
 }
-
 .nav {
   color: var(--title-text-color);
 }
 
-/* Логотип */
+/* Футер */
+.footer {
+  background-color: var(--hero-bg-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer .logo,
+.adress {
+  color: var(--minor-text-color);
+}
+.contacts {
+  color: var(--alpha-minor-text-color);
+}
+
+/* Логотип (Внимание! Ставить после футера и хедера чтобы победила специфичность ховера/фокуса в футере - иначе не работает) */
 .logo {
   color: var(--title-text-color);
 
@@ -64,7 +78,10 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-
 .web {
+  color: var(--accent-text-color);
+}
+.logo:hover,
+.logo:focus {
   color: var(--accent-text-color);
 }
