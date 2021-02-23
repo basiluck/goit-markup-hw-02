@@ -44,6 +44,10 @@ h6 {
   color: var(--title-text-color);
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Хедер */
 .header {
   font-weight: 500;
@@ -94,6 +98,8 @@ a:focus {
   color: var(--accent-text-color);
 }
 
+/* Главная страница */
+
 /* Cекция-герой */
 .hero-business {
   background-color: var(--hero-bg-color);
@@ -115,7 +121,6 @@ a:focus {
   line-height: 1.9;
 }
 .hero-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -126,21 +131,51 @@ a:focus {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
+/* Чем мы занимаемся, наша команда */
 .about-us {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .members {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .members h3 {
   font-weight: 500;
+}
+
+/* Страница портфолио */
+
+/* Кнопки */
+.works-button {
+  background-color: var(--minor-bg-color);
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.works-button:hover,
+.works-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--minor-text-color);
+}
+
+/* Примеры работ */
+.works-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.works-descr {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
