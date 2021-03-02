@@ -6,13 +6,12 @@
   --minor-text-color: #ffffff;
   /* дополнительный цвет текста с прозрачностью */
   --alpha-minor-text-color: rgba(255, 255, 255, 0.6);
+
   /* цвет интерактивных элементов и части логтипа */
   --accent-text-color: #2196f3;
   /* цвет заголовков */
   --title-text-color: #212121;
 
-  /* основной цвет фона */
-  --main-bg-color: #ffffff;
   /* дополнительный цвет фона */
   --minor-bg-color: #f5f4fa;
   /* цвет фона повышенного внимания */
@@ -21,7 +20,7 @@
 
 /* Общие настройки */
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--minor-text-color);
   color: var(--main-text-color);
   font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -78,6 +77,10 @@ a:focus {
 .contacts {
   color: var(--alpha-minor-text-color);
 }
+.contacts a:hover,
+a:focus {
+  color: var(--accent-text-color);
+}
 
 /* Логотип (Внимание! Ставить после футера и хедера чтобы победила специфичность ховера/фокуса в футере - иначе не работает) */
 .logo {
@@ -99,10 +102,10 @@ a:focus {
 }
 
 /* Главная страница */
-
-/* Cекция-герой */
-.hero-business {
+.hero {
   background-color: var(--hero-bg-color);
+}
+.hero-business {
   color: var(--minor-text-color);
 
   font-weight: 900;

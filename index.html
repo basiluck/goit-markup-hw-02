@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Главная</title>
   </head>
   <body>
@@ -45,14 +46,15 @@
       </ul>
     </header>
     <main>
-      <!-- Секция-герой -->
-      <section>
+      <section class="hero">
         <h1 class="hero-business">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <button class="hero-button" type="button">Заказать услугу</button>
+      </section>
 
+      <section>
         <h2 hidden>Скрытый заголовок</h2>
         <ul class="hero-list">
           <li>
@@ -91,31 +93,25 @@
         <h2 class="about-us">Чем мы занимаемся</h2>
         <ul>
           <li>
-            <a href="">
-              <img
-                src="./img/work1opt.jpg"
-                alt="Построение семантически правильного каркасса сайта"
-                width="370"
-              />
-            </a>
+            <img
+              src="./img/work1opt.jpg"
+              alt="Построение семантически правильного каркасса сайта"
+              width="370"
+            />
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/work2opt.jpg"
-                alt="Адаптивная верстка для разных устройств"
-                width="370"
-              />
-            </a>
+            <img
+              src="./img/work2opt.jpg"
+              alt="Адаптивная верстка для разных устройств"
+              width="370"
+            />
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/work3opt.jpg"
-                alt="Подбор оптимальной цветовой гаммы для каждой страницы"
-                width="370"
-              />
-            </a>
+            <img
+              src="./img/work3opt.jpg"
+              alt="Подбор оптимальной цветовой гаммы для каждой страницы"
+              width="370"
+            />
           </li>
         </ul>
       </section>
@@ -172,14 +168,14 @@
       <a class="logo" href="/" title="На главную"
         ><span class="web">Web</span>Studio</a
       >
-      <br />
-
       <!-- Контактная информация -->
-      <adress class="adress"> г. Киев, пр-т Леси Украинки, 26 </adress>
-      <ul class="contacts">
-        <li>info@example.com</li>
-        <li>+38 099 111 11 11</li>
-      </ul>
+      <adress>
+        <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="contacts">
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </adress>
     </footer>
   </body>
 </html>
